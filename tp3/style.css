@@ -1,0 +1,78 @@
+/* Dans style.css */
+body { background-color: #f2f2f2; }
+h1 { color: green; }
+p { font-family: Arial, sans-serif; }
+h1 {
+ color: blue;
+ font-size: 30px;
+ text-align: center;
+}
+h2 {
+ color: white;
+ background-color: lightgreen;
+}
+p { color: red;
+background-color:yellow }
+.texte1 {
+ font-family: Arial, sans-serif;
+ font-size: 18px;
+}
+.texte2 {
+ font-family: Georgia, serif;
+ font-size: 14px;
+}
+.italique { font-style: italic; }
+.gras { font-weight: bold; }
+a { text-decoration: underline; }
+.gauche { text-align: left; }
+.centre { text-align: justify; }
+.droite { text-align: right; }
+p { color: purple; }
+.important {
+ color: blue;
+ font-weight: bold;
+}
+#titre-principal {
+ color: darkred;
+ text-align: center;
+}
+.lien-test {
+ color: blue;
+ text-decoration: none;
+}
+.lien-test:hover {
+ color: red;
+ text-decoration: underline;
+}
+.conteneur {
+ color: blue;
+ font-family: Arial, sans-serif;
+}
+.conteneur { color: blue; }
+.conteneur h2 { color: green; }
+.conteneur p { font-size: 20px; }
+.bloc {
+ width: 280px;
+ background-color: #e8f3fb;
+ border: 2px solid #24527a;
+ padding: 12px;
+ margin: 16px;
+}
+/* Version initiale */
+.bloc { padding: 12px; margin: 16px; }
+/* Test A : remplacez par */
+.bloc { padding: 30px; margin: 16px; }
+/* Test B : revenez à padding: 12px puis testez */
+.bloc { padding: 12px; margin: 30px; }
+.bordure1 { border: 2px solid #24527a; }
+.bordure2 { border: 3px dashed red; }
+.bordure3 { border: 4px double green; }
+.bordure4 { border: 2px dotted black; }
+.bloc {
+ width: 280px;
+ height: 160px;
+ margin-top: 25px;
+ margin-left: 40px;
+ padding-left: 15px;
+ border: 1px solid black;
+}
