@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Contactez-nous / Inscrivez-vous - Aura Boutique</title>
+    </head>
+    <body>
+        <header class="entete">
+            <h1>Contactez-nous / Inscrivez-vous</h1>
+            <p>Rejoignez notre communauté ou envoyez-nous vos demandes d'informations.</p>
+        </header>
+        <nav class="navigation">
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main class="conteneur-principal">
+            <form>
+                <fieldset>
+                    <legend>1 - Vos coordonnées</legend>
+                    <div>
+                        <label for="nom">Nom* :</label>
+                        <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="votre nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom* :</label>
+                    <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom">
+                </div>
+                <div>
+                    <label for="date_naissance">Date de naissance :</label>
+                    <input type="date" id="date_naissance" name="date_naissance">
+                </div>
+                <div>
+                    <label for="email">Adresse email* :</label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                </div>
+                <div>
+                    <label for="site_web">Site web :</label>
+                    <input type="url" id="site_web" name="site_web" value="http//:www." placeholder="https://monsite.com">
+                </div>
+                <div>
+                    <label for="code_secret">Code secret :</label>
+                    <input type="password" id="code_secret" name="code_secret" minlength="6" maxlength="20">
+                </div>
+                <div>
+                    <span>Genre :</span>
+                    <input type="radio" id="genre_homme" name="genre" value="Homme" checked>
+                    <label for="genre_homme">Homme</label>
+                    
+                    <input type="radio" id="genre_femme" name="genre" value="Femme">
+                    <label for="genre_femme">Femme</label>
+                </div>
+                <div>
+                    <label for="pays">Pays :</label>
+                    <select id="pays" name="pays">
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="France">France</option>
+                        <option value="Algérie">Algérie</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="12345678">
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2 - Informations complémentaires</legend>
+                    <div>
+                        <label for="adresse">Adresse postale :</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                    </div>
+                    <div>
+                        <label for="code_postal">Code postal :</label>
+                        <input type="text" id="code_postal" name="code_postal" value="1000" maxlength="4">
+                    </div>
+                    <div>
+                        <label for="semestre">Semestre :</label>
+                        <select id="semestre" name="semestre">
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="region">Région préférée :</label>
+                        <select id="region" name="region">
+                            <option value="Tunis">Tunis</option>
+                            <option value="Sousse">Sousse</option>
+                            <option value="Sfax">Sfax</option>
+                            <option value="Djerba">Djerba</option>
+                            <option value="Tozeur">Tozeur</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3 - Goûts et centres d'intérêt</legend>
+                    <div>
+                        <span>Centres d'intérêt :</span><br>
+                        <input type="checkbox" id="interet_culture" name="interets[]" value="Culture" checked>
+                        <label for="interet_culture">Culture</label>
+                        <input type="checkbox" id="interet_gastro" name="interets[]" value="Gastronomie">
+                        <label for="interet_gastro">Gastronomie</label>
+                        <input type="checkbox" id="interet_plage" name="interets[]" value="Plage">
+                        <label for="interet_plage">Plage</label>
+                        <input type="checkbox" id="interet_desert" name="interets[]" value="Désert">
+                        <label for="interet_desert">Désert</label>
+                        <input type="checkbox" id="interet_histoire" name="interets[]" value="Histoire">
+                        <label for="interet_histoire">Histoire</label>
+                    </div>
+                    <div class="champ-groupe">
+                        <label for="niveau_html">Niveau en HTML (0 à 100) :</label>
+                        <input type="range" id="niveau_html" name="niveau_html" min="0" max="100" step="10" value="50">
+                    </div>
+                    <div>
+                        <label for="note">Note de satisfaction (1 à 10) :</label>
+                        <input type="number" id="note" name="note" min="1" max="10" step="1" value="8">
+                    </div>
+                    <div>
+                        <label for="message">Message / Commentaire :</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre message ou vos suggestions ici..."></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>4 - Photo</legend>
+                    <div class="champ-groupe">
+                        <label for="photo">Photo de profil :</label>
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                     </div>
+                </fieldset>
+                <div class="boutons-formulaire">
+                    <input type="submit" value="Envoyer" class="btn-submit">
+                    <input type="reset" value="Effacer" class="btn-reset">
+                </div>
+            </form>
+            <p class="retour-accueil">
+                <a href="index.html">← Retour à l'accueil</a>
+            </p>
+        </main>
+    </body>
+    <footer class="pied-page">
+        <p>Aura Boutique - Tous droits réservés.</p>
+    </footer>
+</html>
